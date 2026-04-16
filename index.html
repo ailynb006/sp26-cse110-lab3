@@ -1,49 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>First Brainstorm</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>First Brainstorm</title>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <header>
+    <header id="main-header"> <!-- ID Selector -->
         <h1>Weekly Team Meeting</h1>
-        <p>Topic: Brainstorming</p>
+        <p class="subtitle">Topic: Brainstorming</p> <!-- Class Selector -->
         <p>Date: April 8, 2026</p>
     </header>
     <main>
-        <section>
+        <section class="content-box"> <!-- Combining Two Selectors -->
             <h2>Attendance</h2>
-            <ul>
+            <ul class="attendance-list">
                 <li>Teammate1 - Present</li>
                 <li>Teammate2 - Present</li>
-                <li>Teammate1 - Absent</li>
+                <li data-status="absent">Teammate1 - Absent</li> <!-- Attribute Selector -->
             </ul>
         </section>
-        <section>
+        <section class="content-box">
             <h2>Meeting Agenda</h2>
             <p>brainstorming, team logistics</p>
         </section>
         <section>
-            <h2>Pending things to cover</h2>
-            <p>team roles</p>
-        </section>
-        <section>
-            <h2>New things to cover</h2>
-            <p>weekly goals</p>
-        </section>
-        <section>
-            <h2>Questions and Concerns</h2>
-            <p>What time will be set aside for team meetings each week?</p>
-        </section>
-        <section>
-            <h2>Picture</h2>
+            <h2>Media Gallery</h2>
             <img src="example.png" alt="demo image" width="600" height="400">
-            <h3>Video</h3>
-            <video width = "640" height="360" controls>
-                <source src = "CAT3CYOAAdch1.mp4" type="video/mp4">
+            <h3>Video Content</h3>
+            <video width="640" height="360" controls>
+                <source src="CAT3CYOAAdch1.mp4" type="video/mp4">
             </video>
-            <h3>Audio</h3>
-            <audio Controls>
+            <h3>Audio Content</h3>
+            <audio controls>
                 <source src="faaah.mp3" type="audio/mpeg">
             </audio>
         </section>

@@ -1,0 +1,87 @@
+/* The Opera house (team 1) styling :3 */
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+/* Element selector */
+body {
+    background-color: #1a1a1a;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    margin: 0;
+}
+/* ID Selector */
+#main-header {
+    background-color: #722f37; /* Cabernet Red */
+    padding: 40px;
+    text-align: center;
+    border-bottom: 5px solid #d4af37; /* Gold */
+}
+/* Class Selector */
+.subtitle {
+    font-style: italic;
+    color: #d4af37;
+}
+/* Attribute Selector */
+[data-status="absent"] {
+    color: #722f37;
+    text-decoration: line-through;
+}
+/* Selector List */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 0;
+}
+/* Pseudo-class Selector */
+li:hover {
+    background-color: rgba(212, 175, 55, 0.2);
+}
+/* Combinators */
+/* Descendant Combinator */
+header h1 {
+    font-size: 3rem;
+}
+/* Child Combinator */
+main > section {
+    background-color: #2a2a2a;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+/* General Sibling Combinator */
+h2 ~ p {
+    color: #cccccc;
+}
+/* Adjacent Sibling Combinator */
+h3 + video {
+    border: 3px solid #d4af37;
+}
+/* Combining Two Selectors */
+section.content-box {
+    border-left: 10px solid #722f37;
+}
+/* :has() Selector
+   Styles a section only if it contains an image */
+section:has(img) {
+    background-color: #222222;
+    border: 1px dashed #d4af37;
+}
+/* Nested Selectors*/
+.attendance-list {
+    list-style: none;
+    padding: 0;
+    li {
+        padding: 10px;
+        border-bottom: 1px solid #444;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+/* Responsiveness Requirement */
+@media (max-width: 600px) {
+    main {
+        display: block;
+    }
+}
